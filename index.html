@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RICO MADRE ENTERPRISES LTD | Branding, Printing, Souvenirs & Procurement</title>
+  <meta name="description" content="RICO MADRE Enterprises delivers corporate branding, precision printing, souvenirs, packaging and procurement solutions that make brands tangible, memorable and impossible to ignore." />
+  <link rel="icon" type="image/png" href="IMG_0384.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://the2amconsultant.surge.sh/" />
+  <meta property="og:title" content="RICO MADRE ENTERPRISES LTD | Branding, Printing, Souvenirs & Procurement" />
+  <meta property="og:description" content="Bring your brand into the real world through premium branding, printing, souvenirs, packaging and procurement." />
+  <meta property="og:image" content="https://the2amconsultant.surge.sh/IMG_0385.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink:#11131a;
+      --muted:#667085;
+      --paper:#fff;
+      --soft:#f8f9fc;
+      --line:#e8eaf0;
+      --yellow:#ffd43b;
+      --orange:#ff7043;
+      --pink:#ff4fa3;
+      --purple:#7657ff;
+      --blue:#3db7ff;
+      --green:#39c878;
+      --heading:"Manrope",sans-serif;
+      --body:"DM Sans",sans-serif;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--body);color:var(--ink);background:#fff;line-height:1.6;overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1180px,90%);margin:auto}
+
+    nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(17,19,26,.07)}
+    .nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{font-family:var(--heading);font-weight:800;letter-spacing:-.055em;font-size:1.08rem}
+    .logo span{color:var(--purple)}
+    .nav-time{font-size:.78rem;font-weight:800;letter-spacing:.08em;color:var(--purple);padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:#fff}
+    .cta{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--ink);color:#fff;padding:13px 20px;border-radius:999px;font-weight:700;transition:.25s;box-shadow:0 8px 22px rgba(17,19,26,.12)}
+    .cta:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(17,19,26,.18)}
+    .cta.color{background:linear-gradient(100deg,var(--purple),var(--pink));box-shadow:0 12px 30px rgba(118,87,255,.24)}
+
+    .hero{position:relative;min-height:690px;padding:80px 0 85px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:45px;overflow:hidden}
+    .blob{position:absolute;border-radius:50%;pointer-events:none;z-index:-1}
+    .blob.a{width:350px;height:350px;background:#fff1a8;top:-150px;left:-130px;filter:blur(2px)}
+    .blob.b{width:300px;height:300px;background:#eadfff;right:-110px;top:50px;filter:blur(2px)}
+    .blob.c{width:240px;height:240px;background:#d9f5ff;bottom:-130px;left:40%;filter:blur(2px)}
+    .kicker{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 8px 24px rgba(16,19,26,.06)}
+    .dot{width:8px;height:8px;background:var(--green);border-radius:50%;box-shadow:0 0 0 5px rgba(57,200,120,.13)}
+    .hero h1{font-family:var(--heading);font-size:clamp(3rem,6vw,5.7rem);line-height:.98;letter-spacing:-.075em;margin:24px 0;transition:none;transform-style:preserve-3d;transform-origin:center center;will-change:transform;backface-visibility:visible}
+    .rainbow{background:linear-gradient(90deg,var(--purple),var(--pink),var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{max-width:620px;color:#596273;font-size:1.12rem;margin-bottom:30px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .secondary{padding:12px 19px;border:1px solid var(--line);border-radius:999px;font-weight:700;background:#fff}
+    .secondary:hover{border-color:#c7cbd6;transform:translateY(-2px)}
+    .strip{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+    .pill{padding:8px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:.75rem;font-weight:700}
+
+    .hero-visual{height:530px;position:relative;display:grid;place-items:center;perspective:1200px}
+    .hero-card{width:100%;height:100%;border:1px solid #eceef3;border-radius:34px;background:linear-gradient(145deg,#fff 20%,#f8f8fb);box-shadow:0 35px 80px rgba(16,19,26,.12);position:relative;overflow:hidden}
+    .hero-card:before{content:"";position:absolute;width:310px;height:310px;background:radial-gradient(circle,#ffe26b,transparent 67%);left:-80px;top:-80px}
+    .hero-card:after{content:"";position:absolute;width:330px;height:330px;background:radial-gradient(circle,#ded5ff,transparent 68%);right:-100px;bottom:-100px}
+    .visual-label,.mini-tag{position:absolute;z-index:5}
+    .visual-label{left:22px;top:22px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 13px;font-size:.76rem;font-weight:800;box-shadow:0 8px 20px rgba(16,19,26,.08)}
+    .mini-tag{right:22px;top:22px;border-radius:999px;background:#fff;padding:9px 12px;font-size:.68rem;font-weight:800;border:1px solid var(--line)}
+    .hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;display:block}
+    .image-placeholder{position:absolute;inset:0;z-index:1;display:grid;place-items:center;text-align:center;background:linear-gradient(135deg,#fff8c9,#f1ebff 50%,#e8f8ff);color:#667085;font-weight:800;font-size:1rem}
+    .image-placeholder small{display:block;font-size:.72rem;font-weight:700;margin-top:5px;color:#98a0ae}
+
+    .capabilities-detail{padding:100px 0 55px}
+    .section-head{max-width:800px;margin-bottom:55px}
+    .eyebrow{font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.15em;color:var(--purple)}
+    .section h2,.section-head h2{font-family:var(--heading);font-size:clamp(2.3rem,4vw,4rem);line-height:1.05;letter-spacing:-.06em;margin:12px 0 16px}
+    .section-head p{color:var(--muted);font-size:1.05rem}
+    .capability-block{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:95px}
+    .capability-block:nth-child(even){direction:rtl}
+    .capability-block:nth-child(even) .cap-text{direction:ltr}
+    .cap-text h2{font-family:var(--heading);font-size:clamp(2rem,3.3vw,3rem);line-height:1.05;margin-bottom:20px;letter-spacing:-.05em}
+    .cap-text p{font-size:1.04rem;color:#525b6b;margin-bottom:20px}
+    .cap-text .accent-line{width:65px;height:6px;border-radius:99px;margin-bottom:22px;background:linear-gradient(90deg,var(--purple),var(--pink),var(--orange))}
+
+    .cap-visual{position:relative;width:100%;aspect-ratio:1200/630;padding:0;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 20px 45px rgba(16,19,26,.08),inset 0 1px 0 rgba(255,255,255,.9);transform:translateZ(10px);transition:transform .35s ease,box-shadow .35s ease,border-color .3s ease;transform-style:preserve-3d}
+    .cap-visual::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.08),transparent 35%,transparent 65%,rgba(118,87,255,.05));z-index:2}
+    .cap-visual img{width:100%;height:100%;display:block;object-fit:cover;position:relative;z-index:1}
+    .cap-visual:hover{transform:translateZ(25px) rotateX(2deg) rotateY(-1deg);border-color:#d7d1ff;box-shadow:0 30px 60px rgba(16,19,26,.12)}
+    .gif-fallback{display:none;position:absolute;inset:0;align-items:center;justify-content:center;font-weight:800;color:#98a0ae;background:linear-gradient(135deg,#fff,#f4f5f9);z-index:1}
+    .gif-fallback.show{display:flex}
+
+    .brand-note{margin:0 0 100px;border-radius:32px;padding:48px;background:linear-gradient(120deg,#fff7c9,#f4efff 48%,#ffe9f4);border:1px solid var(--line);position:relative;overflow:hidden}
+    .brand-note:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-70px;top:-100px;background:#fff;opacity:.7}
+    .brand-note h2{font-family:var(--heading);font-size:clamp(2rem,3.5vw,3.2rem);letter-spacing:-.055em;max-width:760px;line-height:1.05}
+    .brand-note p{max-width:760px;color:#596273;margin-top:15px;font-size:1rem}
+
+    footer{padding:55px 0;border-top:1px solid var(--line)}
+    .footer-inner{display:flex;justify-content:space-between;gap:25px;align-items:center}
+    footer p{font-size:.8rem;color:#8a909c}
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr;padding-top:65px}.hero-visual{height:470px}
+      .capability-block{grid-template-columns:1fr;gap:38px;margin-bottom:75px}.capability-block:nth-child(even){direction:ltr}
+      .nav-time{display:none}
+    }
+    @media(max-width:560px){
+      .nav-inner{height:68px}.logo{font-size:.92rem}.nav .cta{padding:10px 14px;font-size:.78rem}
+      .hero h1{font-size:3.1rem}.hero{min-height:auto;padding-bottom:55px}.hero-visual{height:390px}
+      .capabilities-detail{padding-top:75px}.cap-visual{border-radius:18px}
+      .brand-note{padding:30px;border-radius:24px;margin-bottom:65px}.footer-inner{display:block}.footer-inner .cta{margin-top:20px}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="logo">RICO MADRE <span>ENTERPRISES LTD</span></a>
+      <div class="nav-time" id="clock">--:--:-- WAT</div>
+      <a href="https://wa.me/2347016970804" class="cta" target="_blank" rel="noopener">Request Quote ↗</a>
+    </div>
+  </nav>
+
+  <header class="hero container" id="hero">
+    <span class="blob a"></span><span class="blob b"></span><span class="blob c"></span>
+    <div>
+      <div class="kicker"><span class="dot"></span> Creative production partner</div>
+      <h1 id="tiltHeading">Bring your <span class="rainbow">physical brand</span> to life.</h1>
+      <p>
+        We turn ideas into things people can see, touch, wear, keep and remember — from corporate branding and precision printing to memorable souvenirs, packaging and dependable procurement.
+      </p>
+      <div class="actions">
+        <a href="https://wa.me/2347016970804?text=Hello%20RICO%20MADRE%2C%20I%27d%20like%20to%20discuss%20a%20branding%20project." class="cta color" target="_blank" rel="noopener">Start Your Project →</a>
+        <a href="#capabilities" class="secondary">Explore Our Work</a>
+      </div>
+      <div class="strip">
+        <span class="pill">Branding</span><span class="pill">Printing</span><span class="pill">Souvenirs</span><span class="pill">Procurement</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="visual-label">Branding that gets noticed</div>
+        <div class="mini-tag">RICO MADRE</div>
+        <img class="hero-image" src="IMG_0387.JPG" alt="RICO MADRE branded product showcase" />
+        <div class="image-placeholder">
+          <span>Place your hero image here</span>
+          <small>IMG_0387.JPG</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="capabilities-detail container" id="capabilities">
+      <div class="section-head">
+        <div class="eyebrow">What we do</div>
+        <h2>Everything your brand needs to show up beautifully in the real world.</h2>
+        <p>From concept and production to branded merchandise and sourcing, RICO MADRE helps businesses create physical brand experiences that look intentional and feel memorable.</p>
+      </div>
+
+      <div class="capability-block">
+        <div class="cap-text">
+          <div class="accent-line"></div>
+          <h2>Corporate Branding</h2>
+          <p>
+            Branding is the soul of your business made visible. We harmonize strategy and design to create cohesive visual identities that resonate across every physical touchpoint. From logo application on premium merchandise to defining the aesthetic of executive stationery, we ensure your brand tells a unified story of professionalism and quality.
+          </p>
+          <p>
+            Our approach ensures that every branded asset, whether a uniform, corporate gift or promotional item, reinforces your market positioning and leaves a lasting, high-value impression on clients and partners alike.
+          </p>
+        </div>
+        <div class="cap-visual">
+          <img src="br.gif" alt="Corporate Branding" onerror="this.style.display='none';this.nextElementSibling.classList.add('show')" />
+          <div class="gif-fallback">Place <strong style="margin-left:4px">br.gif</strong> beside this page</div>
+        </div>
+      </div>
+
+      <div class="capability-block">
+        <div class="cap-text">
+          <div class="accent-line"></div>
+          <h2>Precision Printing</h2>
+          <p>
+            Printing is where digital design meets tactile reality. We utilize state-of-the-art technology to deliver crisp colors, exact alignments, and premium finishes on a vast array of substrates. We specialize in turning high-stakes concepts into physical marketing assets, stationery, and large-format displays that look as good in hand as they do on screen.
+          </p>
+          <p>
+            Whether it is offset printing for high-volume runs or digital printing for speed and customization, we guarantee the material quality and color accuracy necessary to represent a serious enterprise.
+          </p>
+        </div>
+        <div class="cap-visual">
+          <img src="print.gif" alt="Precision Printing" onerror="this.style.display='none';this.nextElementSibling.classList.add('show')" />
+          <div class="gif-fallback">Place <strong style="margin-left:4px">print.gif</strong> beside this page</div>
+        </div>
+      </div>
+
+      <div class="capability-block">
+        <div class="cap-text">
+          <div class="accent-line"></div>
+          <h2>Souvenirs, Gifts & Merchandise</h2>
+          <p>
+            The right souvenir keeps a moment alive long after an event ends. We create and brand thoughtful corporate gifts, event souvenirs, apparel and promotional merchandise that turn ordinary items into useful reminders of your organization.
+          </p>
+          <p>
+            From branded shirts and executive gifts to event merchandise, we focus on presentation, consistency and the small details that make people want to keep what you give them.
+          </p>
+        </div>
+        <div class="cap-visual">
+          <img src="pk.gif" alt="Souvenirs and branded merchandise" onerror="this.style.display='none';this.nextElementSibling.classList.add('show')" />
+          <div class="gif-fallback">Place <strong style="margin-left:4px">pk.gif</strong> beside this page</div>
+        </div>
+      </div>
+
+      <div class="capability-block">
+        <div class="cap-text">
+          <div class="accent-line"></div>
+          <h2>Procurement & Supply</h2>
+          <p>
+            Procurement should make your operation easier, not create another layer of work. We help source branded materials, merchandise, corporate items and project-specific products according to your brief, quantity, quality expectations and timeline.
+          </p>
+          <p>
+            By coordinating sourcing alongside branding and production, we help keep the physical side of your project organized from specification through delivery.
+          </p>
+        </div>
+        <div class="cap-visual" style="background:linear-gradient(135deg,#fff7c9,#f0eaff,#e6f8ff);display:grid;place-items:center">
+          <div style="font-family:var(--heading);font-size:clamp(2rem,4vw,3.4rem);font-weight:800;letter-spacing:-.06em;text-align:center;padding:30px">Source.<br><span class="rainbow">Coordinate.</span><br>Deliver.</div>
+        </div>
+      </div>
+
+      <div class="brand-note">
+        <h2>From a blank shirt to a complete branded experience.</h2>
+        <p>We connect the creative and physical sides of your brand — so your apparel, printed materials, souvenirs, packaging and sourced items feel like they belong to one recognizable identity.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; 2026 RICO MADRE ENTERPRISES LTD. All rights reserved.</p>
+      <a href="https://wa.me/2347016970804" class="cta" target="_blank" rel="noopener">WhatsApp Us ↗</a>
+    </div>
+  </footer>
+
+  <script>
+    function updateWATClock() {
+      const formatter = new Intl.DateTimeFormat([], {
+        timeZone: 'Africa/Lagos',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      });
+      const clock = document.getElementById('clock');
+      if (clock) clock.textContent = formatter.format(new Date()) + ' WAT';
+    }
+
+    updateWATClock();
+    setInterval(updateWATClock, 1000);
+
+    // HERO TITLE: 3D cursor-following movement
+    // The title only responds while the cursor is directly over the title.
+    const heading = document.getElementById('tiltHeading');
+
+    if (heading && window.matchMedia('(pointer: fine)').matches) {
+      let targetRX = 0;
+      let targetRY = 0;
+      let targetZ = 0;
+      let currentRX = 0;
+      let currentRY = 0;
+      let currentZ = 0;
+
+      heading.addEventListener('mousemove', function (e) {
+        const rect = heading.getBoundingClientRect();
+
+        // Cursor position relative to the heading itself.
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+        // True 3D tilt: opposite rotation on X/Y axes.
+        targetRX = y * -14;
+        targetRY = x * 16;
+
+        // Subtle Z-depth movement gives the heading a lifted 3D feel.
+        targetZ = 12;
+      }, { passive: true });
+
+      heading.addEventListener('mouseleave', function () {
+        targetRX = 0;
+        targetRY = 0;
+        targetZ = 0;
+      });
+
+      function animateHeading() {
+        // Smooth trailing/inertia.
+        currentRX += (targetRX - currentRX) * 0.10;
+        currentRY += (targetRY - currentRY) * 0.10;
+        currentZ += (targetZ - currentZ) * 0.10;
+
+        heading.style.transform =
+          'perspective(900px) ' +
+          'translate3d(0,0,' + currentZ + 'px) ' +
+          'rotateX(' + currentRX + 'deg) ' +
+          'rotateY(' + currentRY + 'deg)';
+
+        requestAnimationFrame(animateHeading);
+      }
+
+      requestAnimationFrame(animateHeading);
+    }
+
+    // CAPABILITY VISUAL TILT
+    document.querySelectorAll('.cap-visual').forEach(function (visual) {
+      visual.addEventListener('mousemove', function (e) {
+        const rect = visual.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+        visual.style.transform =
+          'translateZ(25px) rotateX(' + (y * -4) + 'deg) rotateY(' + (x * 5) + 'deg)';
+      });
+
+      visual.addEventListener('mouseleave', function () {
+        visual.style.transform =
+          'translateZ(10px) rotateX(0deg) rotateY(0deg)';
+      });
+    });
+  </script>
+</body>
+</html>
