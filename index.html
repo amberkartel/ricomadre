@@ -110,7 +110,14 @@
       .nav-time{display:none}
     }
     @media(max-width:560px){
-      .nav-inner{height:68px}.logo{font-size:.92rem}.nav .cta{padding:10px 14px;font-size:.78rem}
+      .nav-inner{height:60px;gap:12px}
+      .logo{font-size:.85rem}
+      nav .cta{
+        padding:7px 12px;
+        font-size:.72rem;
+        gap:4px;
+        box-shadow:none;
+      }
       .hero h1{font-size:3.1rem}.hero{min-height:auto;padding-bottom:55px}.hero-visual{height:390px}
       .capabilities-detail{padding-top:75px}.cap-visual{border-radius:18px}
       .brand-note{padding:30px;border-radius:24px;margin-bottom:65px}.footer-inner{display:block}.footer-inner .cta{margin-top:20px}
@@ -262,7 +269,6 @@
     setInterval(updateWATClock, 1000);
 
     // HERO TITLE: 3D cursor-following movement
-    // The title only responds while the cursor is directly over the title.
     const heading = document.getElementById('tiltHeading');
 
     if (heading && window.matchMedia('(pointer: fine)').matches) {
@@ -275,16 +281,11 @@
 
       heading.addEventListener('mousemove', function (e) {
         const rect = heading.getBoundingClientRect();
-
-        // Cursor position relative to the heading itself.
         const x = (e.clientX - rect.left) / rect.width - 0.5;
         const y = (e.clientY - rect.top) / rect.height - 0.5;
 
-        // True 3D tilt: opposite rotation on X/Y axes.
         targetRX = y * -14;
         targetRY = x * 16;
-
-        // Subtle Z-depth movement gives the heading a lifted 3D feel.
         targetZ = 12;
       }, { passive: true });
 
@@ -295,7 +296,6 @@
       });
 
       function animateHeading() {
-        // Smooth trailing/inertia.
         currentRX += (targetRX - currentRX) * 0.10;
         currentRY += (targetRY - currentRY) * 0.10;
         currentZ += (targetZ - currentZ) * 0.10;
